@@ -4,7 +4,10 @@ using namespace std;
 
 // Your function goes here
 int find_largest(int x, int y) {
-    return x;
+   if (x > y) {
+       return x;
+    } else {
+        return y;}
 }
 
 TEST_CASE("find_largest returns the greater of two integers") {
