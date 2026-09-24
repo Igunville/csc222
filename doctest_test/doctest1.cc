@@ -4,7 +4,7 @@ using namespace std;
 
 // Your function goes here
 bool is_even(int n) {
-    return true;
+    return n % 2 ==0;
 }
 
 
