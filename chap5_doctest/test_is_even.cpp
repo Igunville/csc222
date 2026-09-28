@@ -4,7 +4,8 @@ using namespace std;
 
 
 int is_even(int n) {
-    return true;
+   if (n % 2 == 0) return true;
+   else return false;
 }
 
 
