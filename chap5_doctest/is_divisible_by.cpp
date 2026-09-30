@@ -3,7 +3,8 @@
 using namespace std;
 
 bool is_divisible_by(int n, int m) {
-    return true;
+    if (n % m == 0) return true;
+    return false;
 
 }
 
