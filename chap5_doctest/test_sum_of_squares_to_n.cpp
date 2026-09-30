@@ -3,7 +3,8 @@
 using namespace std;
 
 int sum_of_squares_to_n(int n) {
-    return 1;
+    if (n < 1) return 0;
+    return n * (n +1) * (2 * n + 1) / 6;
 }
 
 
