@@ -3,6 +3,7 @@
 using namespace std;
 
 int count_digits(int n) {
+    if (n == 0) return 1; 
     int i = 0;
     while (n >= 1) {
         i += 1;
