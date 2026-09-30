@@ -3,18 +3,10 @@
 using namespace std;
 
 bool is_prime(int n) { 
-
-    int count = 1;
-    while (count < n){
-        if (n % n == 0 && n != 1){
-            return false;
-        }
-        count++;
-    }
     if (n <= 1) return false;
-    if (n <= 3) return true;
-    for (int p  = 2; p < n; p++){
-        if (n % p  == 0) return false;
+    if (n <=3) return true;
+   for (int p = 2; p * p <= n; p++) {
+        if (n % p == 0) return false;
     }
     return true;
 }
