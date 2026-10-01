@@ -1,11 +1,11 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest.h>
 using namespace std;
+#include <numeric>
 
 int lcm(int n, int m) {
-    return 15;
+    return abs(n) / gcd(n, m) * abs(m);
 }
-
 
 
 TEST_CASE("lcm(int n, int m) returns the LCM of n and m") {
