@@ -5,7 +5,7 @@ using namespace std;
 
 string reverse_string(string word){
     string final;
-    for (int y = word.length() + 1; y!= 0; y--){
+    for (int y = word.length() - 1; y!= -1; y--){
         char letter = word[y];
         final.push_back(letter);
     }
