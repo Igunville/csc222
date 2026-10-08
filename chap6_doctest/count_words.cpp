@@ -4,7 +4,12 @@
 using namespace std;
 
 int count_words(string word){
-    return 1;
+    int count = 1;
+    for (char c : word)
+        if (c == ' '){
+        count ++;
+        }
+    return count;
 
 }
 
