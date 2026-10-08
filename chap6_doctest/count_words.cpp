@@ -4,11 +4,14 @@
 using namespace std;
 
 int count_words(string word){
-    int count = 1;
+    int count = 0;
     for (char c : word)
         if (c == ' '){
         count ++;
         }
+    if (word.length() != 0){
+        count += 1;
+    }
     return count;
 
 }
