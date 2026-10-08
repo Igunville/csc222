@@ -6,7 +6,7 @@ using namespace std;
 int count_vowels(string word){
     int number = 0;
     for(char c : word)
-        if (c == e || c == o){
+        if (c == 'e' || c == 'o'){
         number ++;
         }
     return number;
