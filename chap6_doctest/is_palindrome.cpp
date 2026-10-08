@@ -4,8 +4,15 @@
 using namespace std;
 
 bool is_palindrome(string word){
-    return true;
+    string final;
+    for (int y = word.length() - 1; y!= -1; y--){
+        char letter = word[y];
+        final.push_back(letter);
+    }
+    if (final == word) return true;
+    else return false;
 }
+
 
 
     TEST_CASE("is_palindrome detects palindromes") {
