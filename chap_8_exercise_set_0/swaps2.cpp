@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 void will_swap_with_pointers(char* a, char* b)
 {
     cout << "a: " << *a << "  b: " << *b << endl;
