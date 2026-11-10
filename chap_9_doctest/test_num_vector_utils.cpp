@@ -19,3 +19,8 @@ TEST_CASE("Testing render_num_vector") {
     string expected3 = "";
     CHECK(numstr3 == expected3);
 }
+
+TEST_CASE("Testing num_vector_sum") {
+    vector<int> nums = {1, 3, 7};
+    CHECK(11 == num_vector_sum(nums));
+}
