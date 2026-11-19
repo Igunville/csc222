@@ -6,8 +6,8 @@ using namespace std;
 
 int count_koopa(string word){
     int koopa = 0;
-    if(word == "Koopa"){
-        koopa = -1;}
+    if (word == "Koopa"){
+        return -1;}
     for(int c = 0; c <= (int)word.length() - 5; c++ ){
         if(word[c] == 'K' &&
            word[c + 1] == 'o' &&
