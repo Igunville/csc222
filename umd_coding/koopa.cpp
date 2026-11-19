@@ -6,18 +6,16 @@ using namespace std;
 
 int count_koopa(string word){
     int koopa = 0;
-    for(char c : word){
-        if(c == 'K'){
-            if(c == 'o'){
-                if(c == 'o'){
-                    if(c == 'p'){
-                        if(c == 'a'){
-                            koopa ++;
-                        }
-                    }
-                }
-            }
-        }
+    if(word == "Koopa"){
+        koopa = -1;}
+    for(int c = 0; c <= (int)word.length() - 5; c++ ){
+        if(word[c] == 'K' &&
+           word[c + 1] == 'o' &&
+           word[c + 2] == 'o' &&
+           word[c + 3] == 'p' &&
+           word[c + 4] == 'a') {
+            koopa ++;
+       }
     }
 
 
