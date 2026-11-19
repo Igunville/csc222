@@ -4,9 +4,22 @@
 using namespace std;
 
 
-int count_koopa(string a){
+int count_koopa(string word){
     int koopa = 0;
-    
+    for(char c : word){
+        if(c == 'K'){
+            if(c == 'o'){
+                if(c == 'o'){
+                    if(c == 'p'){
+                        if(c == 'a'){
+                            koopa ++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
     return koopa;
